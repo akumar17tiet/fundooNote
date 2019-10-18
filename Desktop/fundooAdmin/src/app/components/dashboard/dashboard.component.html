@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav navbar-fixed-top navbar-right">
+      <li class="nav-item">
+        <a class="navbar-brand" href="#">
+          <img src="../../../favicon.ico" alt="Logo" style="width:40px;">FundooApp Admin
+        </a>
+      </li>
+      <div class="logoutBtn">
+        <button type="button" class="btn btn-light " (click)="OnLogout()">Logout</button>
+      </div>
+      
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title align-items-center d-flex justify-content-center">Advance Users</h5>
+            <p class="card-text align-items-center d-flex justify-content-center" id="countAdvance"></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title align-items-center d-flex justify-content-center">Basic Users</h5>
+            <p class="card-text align-items-center d-flex justify-content-center" id="countBasic"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <br>
+  
+    <div class="table-responsive-sm">
+  
+      <table class="table table-bordered justify-content-center" id="user_table" >
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Service</th>
+
+          
+          </tr>
+        </thead>
+      </table>
+    </div>
